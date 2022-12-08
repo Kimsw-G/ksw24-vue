@@ -1,4 +1,5 @@
 <template>
+  <!-- <div id="modal"></div> -->
   <nav>
     <router-link to="/">Home</router-link> |
     <!-- <router-link to="/about">About</router-link> |
@@ -13,11 +14,16 @@
     <router-link to="/databinding/class">class</router-link> |
     <router-link to="/databinding/style">style</router-link> -->
     <router-link to="/event/click">click</router-link> | 
-    <router-link to="/event/change">change</router-link>| 
-    <router-link to="/event/key">key</router-link>
+    <router-link to="/event/change">change</router-link> | 
+    <router-link to="/event/key">key</router-link> | 
+    <router-link to="/test">test</router-link> | 
+    <router-link to="/props">props</router-link> | 
+    <router-link to="/teleport">teleport</router-link> | 
+    <router-link to="/modal">modal</router-link>
   </nav>
   <router-view/>
   <router-view name="footer"/>
+  
 </template>
 
 <style>

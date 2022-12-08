@@ -121,6 +121,38 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "databinding", webpackPrefetch: true */ '../views/2_event/EventKeyView.vue')
+  },
+  {
+    path: '/test',
+    name: 'Spring01View',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "databinding", webpackPrefetch: true */ '../views/3_spring/Spring01View.vue')
+  },
+  {
+    path: '/props',
+    name: 'PropsMainView',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "databinding", webpackPrefetch: true */ '../views/4_props/PropsMainView.vue')
+  } ,
+  {
+    path: '/teleport',
+    name: 'TeleportModalView',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "databinding", webpackPrefetch: true */ '../views/5_teleport/TeleportModalView.vue')
+  },
+  {
+    path: '/modal',
+    name: 'ModalUI',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "databinding", webpackPrefetch: true */ '../views/5_teleport/ModalUI.vue')
   }
 ]
 
